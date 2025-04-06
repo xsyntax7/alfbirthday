@@ -1,0 +1,128 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-color: #ffebee;
+    color: #d81b60;
+    text-align: center;
+    overflow-x: hidden;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2rem;
+    background-color: #f06292;
+    color: white;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.btn:hover {
+    background-color: #ec407a;
+    transform: translateY(-3px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Heart cursor trail styles */
+.heart {
+    position: absolute;
+    pointer-events: none;
+    opacity: 0;
+    font-size: 20px;
+    color: #f48fb1;
+    animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0) rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-100px) rotate(20deg);
+        opacity: 0;
+    }
+}
+
+/* Photo styling */
+.photo-container {
+    margin: 2rem 0;
+}
+
+.birthday-photo {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    border: 5px solid white;
+}
+
+.romantic-photos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
+
+.romantic-photos img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 3px solid white;
+    transition: transform 0.3s ease;
+}
+
+.romantic-photos img:hover {
+    transform: scale(1.05);
+}
+
+/* Question page styles */
+.question-container {
+    margin: 2rem 0;
+}
+
+.answer-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.answer-btn {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.yes-btn {
+    background-color: #4caf50;
+    color: white;
+}
+
+.no-btn {
+    background-color: #f44336;
+    color: white;
+    cursor: not-allowed;
+    opacity: 0.6;
+}
