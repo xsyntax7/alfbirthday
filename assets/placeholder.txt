@@ -1,0 +1,6 @@
+This folder will contain:
+- alifah.jpg (for page1)
+- photo1.jpg, photo2.jpg, photo3.jpg (for page2)
+- yourphoto.jpg (for page4)
+
+Please replace these with your actual photos.
